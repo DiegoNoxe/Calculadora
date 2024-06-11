@@ -1,0 +1,108 @@
+*{
+    padding: 0;
+    margin:  0;
+}
+
+h1{
+    background-color: #ff7700;
+    text-align: center; 
+    font-size: 4rem;
+    font-weight: bolder;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+input.large{
+    width: 15rem;
+}
+
+.primeiroN
+{
+    margin-top: 20rem;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+.segundoN
+{
+
+    text-align: center;
+}
+
+.faça{
+    font-size: 3rem;
+    top: 19rem;
+    position: relative;
+    text-align: center;
+}
+
+.botao{
+    margin-top: 2rem;
+    text-align: center;
+}
+
+button{
+    font-size: 0.9rem;
+}
+
+div#result{
+    margin-left: 7.5rem;
+    margin-top: 2rem;
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+.resulta{
+    font-size: 1.5rem;
+    bottom: 1.8rem;
+    left: 55rem;
+    display: inline-block;
+    position: relative;
+}
+
+/*  Animações */
+
+.color-change-2x {
+	-webkit-animation: color-change-2x 9s linear infinite alternate both;
+	        animation: color-change-2x 9s linear infinite alternate both;
+}
+
+@-webkit-keyframes color-change-2x {
+    0% {
+      background: #ffffff;
+    }
+    100% {
+      background: #D5E5F2;
+    }
+  }
+  @keyframes color-change-2x {
+    0% {
+        background: #000000;
+    }
+    100% {
+        background: #D5E5F2;
+    }
+  }
+  
+
+
+  .color-change-2xx {
+	-webkit-animation: color-change-2xx 9s linear infinite alternate both;
+	        animation: color-change-2xx 9s linear infinite alternate both;
+}
+
+@-webkit-keyframes color-change-2xx {
+    0% {
+      color: #000000;
+    }
+    100% {
+        color: #d0ff00;
+    }
+  }
+  @keyframes color-change-2xx {
+    0% {
+        color: #ffffff;
+    }
+    100% {
+        color: #008cff;
+    }
+  }

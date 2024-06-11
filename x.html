@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculo</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="color-change-2x">
+<h1 class=""> Calculadora </h1>
+
+<p class="faça color-change-2xx">Faça seu Calculo</p>
+<div class="primeiroN"><input type="number" id="one" class="large"></div>
+<div class="segundoN"><input type="number" id="two"  class="large"></div>
+
+<div class="botao">
+    <button onclick="calcular(1)">Somar</button>
+    <button onclick="calcular(2)">Subtrair</button>
+    <button onclick="calcular(3)">Multiplicar</button>
+    <button onclick="calcular(4)">Dividir</button>
+</div>
+
+
+<div id="result" class=""></div>
+<p class="resulta color-change-2xx">Resultado: </p>
+
+
+<script>
+let n1 = document.getElementById('one')
+let n2 = document.getElementById('two')
+let n3 = document.getElementById('result');
+
+
+function calcular(operacao)
+{
+
+    let num1 = parseFloat(n1.value)
+    let num2 = parseFloat(n2.value)
+    let resultado;
+
+switch(operacao)
+{
+    case 1:
+        resultado =  num1 + num2;
+        break;
+    case 2:
+        resultado =  num1 - num2;
+
+        break;
+    case 3:
+        resultado =num1 * num2;
+        break;
+    case 4:
+        resultado = num1 / num2;
+        break;
+}
+
+n3.innerHTML = resultado;
+}
+
+</script>
+
+</body>
+</html>
