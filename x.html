@@ -21,7 +21,7 @@
     <button onclick="calcular(4)">Dividir</button>
 </div>
 
-
+<div id="observa" class=""></div>
 <div id="result" class=""></div>
 <p class="resulta color-change-2xx">Resultado: </p>
 
@@ -30,7 +30,7 @@
 let n1 = document.getElementById('one')
 let n2 = document.getElementById('two')
 let n3 = document.getElementById('result');
-
+let n4 = document.getElementById('observa');
 
 function calcular(operacao)
 {
@@ -38,6 +38,7 @@ function calcular(operacao)
     let num1 = parseFloat(n1.value)
     let num2 = parseFloat(n2.value)
     let resultado;
+    let observa;
 
 switch(operacao)
 {
@@ -56,7 +57,14 @@ switch(operacao)
         break;
 }
 
+observa = '';
+
+if(resultado < 0){
+    observa = "Curiosidade: O resultado é negativo";
+}
+
 n3.innerHTML = resultado;
+n4.innerHTML = observa;
 }
 
 </script>
