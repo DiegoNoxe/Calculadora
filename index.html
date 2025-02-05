@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CALCULADORA</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section class="container">
+        <h1>CALCULADORA</h1>
+
+        <table class="calculadora">
+            <tr>
+                <td colspan="4"><input type="text" class="display"></td>
+            </tr>
+            
+            <tr>
+                <td><Button onclick="clearDisplay()" class="btn-clear">C</Button></td>
+                <td><Button onclick="display('(')">(</Button></td>
+                <td><Button onclick="display(')')">)</Button></td>
+                <td><Button onclick="display('/')">/</Button></td>
+            </tr>
+    
+            <tr>
+                <td><Button onclick="display('7')">7</Button></td>
+                <td><Button onclick="display('8')">8</Button></td>
+                <td><Button onclick="display('9')">9</Button></td>
+                <td><Button onclick="display('*')">*</Button></td>
+            </tr>
+    
+            <tr>
+                <td><Button onclick="display('4')">4</Button></td>
+                <td><Button onclick="display('5')">5</Button></td>
+                <td><Button onclick="display('6')">6</Button></td>
+                <td><Button onclick="display('+')">+</Button></td>
+            </tr>
+    
+            <tr>
+                <td><Button onclick="display('1')">1</Button></td>
+                <td><Button onclick="display('2')">2</Button></td>
+                <td><Button onclick="display('3')">3</Button></td>
+                <td><Button onclick="display('-')">-</Button></td>
+            </tr>
+    
+            <tr>
+                <td><Button onclick="display('.')">.</Button></td>
+                <td><Button onclick="display('0')">0</Button></td>
+                <td><Button onclick="clearOne()" class="btn-del">&laquo;</Button></td>
+                <td><Button onclick="result()" class="btn-eq">=</Button></td>
+            </tr>   
+        </table>
+
+    </section>
+    
+<script src="index.js"></script>
+</body>
+</html>
